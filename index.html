@@ -32,6 +32,29 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	
+	
+	<script language="JavaScript">
+		var imgObj = new Image();
+		function showImgWin(imgName) {
+		imgObj.src = imgName;
+		setTimeout("createImgWin(imgObj)", 100);
+			}
+		function createImgWin(imgObj) {
+		if (! imgObj.complete) {
+		setTimeout("createImgWin(imgObj)", 100);
+		return;
+			}
+		imageWin = window.open("", "imageWin",
+		"width=" + imgObj.width + ",height=" + imgObj.height);
+		imageWin.document.write("<html><body style='margin:0'>");
+		imageWin.document.write("<img src='" + imgObj.src + "'>");
+		imageWin.document.write("</body><html>");
+		imageWin.document.title = imgObj.src;
+			}
+	</script>
+
 
 </head>
 
@@ -377,6 +400,10 @@
                     <h2 class="section-heading">Are you Curious ? Click Next</h2>
                     <hr class="primary">
 			<p><a href="https://github.com/xohoon/ParkingQ"><h4>Detail spec View</h4></a></p>
+			
+			<a href="javascript:showImgWin('img/portfolio/thumbnails/program.jpeg')"><h4>Detail spec View</h4></a>
+
+			
                     	<p><a href="https://github.com/xohoon"><h4>GitHub</h4></a></p>
                     <br><br>
                     <b>Catch ME! If you want</b>
