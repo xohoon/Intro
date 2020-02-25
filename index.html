@@ -49,7 +49,7 @@
 		imageWin = window.open("", "imageWin",
 		"width=" + imgObj.width + ",height=" + imgObj.height);
 		imageWin.document.write("<html><body style='margin:0;'>");
-		imageWin.document.write("<img src='" + imgObj.src + "'>");
+		imageWin.document.write("<img src='" + imgObj.src + "' style='width:100%'>");
 		imageWin.document.write("</body><html>");
 		imageWin.document.title = imgObj.src;
 			}
