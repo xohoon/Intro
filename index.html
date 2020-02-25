@@ -48,7 +48,7 @@
 			}
 		imageWin = window.open("", "imageWin",
 		"width=" + imgObj.width + ",height=" + imgObj.height);
-		imageWin.document.write("<html><body style='margin:0'>");
+		imageWin.document.write("<html><body style='margin:0'; 'overflow:auto'>");
 		imageWin.document.write("<img src='" + imgObj.src + "'>");
 		imageWin.document.write("</body><html>");
 		imageWin.document.title = imgObj.src;
