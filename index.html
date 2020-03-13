@@ -464,10 +464,19 @@
 
 
 	<div style="position: fixed; right: 30px; top: 100px;">
-		<a href="javascript:showImgWin('img/portfolio/fullsize/img1200.png')"><img src='img/portfolio/fullsize/port.png' style="width:70%"></a>
+		<a href="javascript:showImgWin('img/portfolio/fullsize/img1200.png')">
+			<img src='img/portfolio/fullsize/portOut.png' onmouseover="this.src='img/portfolio/fullsize/portOver.png';" 
+			     onmouseout="this.src='img/portfolio/fullsize/portOut.png';" style="width:70%">
+		</a>
 	</div>
+<!-- 	
+	onmouseover="this.src='롤오버 이미지';" onmouseout="this.src='기존 이미지';"
+	 -->
 	<div style="position: fixed; right: 30px; top: 200px;">
-		<a href="https://github.com/xohoon" target="_blank"><img src='img/portfolio/fullsize/git.png' style="width:70%"></a>
+		<a href="https://github.com/xohoon" target="_blank">
+			<img src='img/portfolio/fullsize/gitOut.png' onmouseover="this.src='img/portfolio/fullsize/gitOver.png';" 
+			     onmouseout="this.src='img/portfolio/fullsize/gitOut.png';" style="width:70%">
+		</a>
 	</div>
 	
 </body>
